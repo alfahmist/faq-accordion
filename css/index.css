@@ -186,4 +186,161 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background-color: #af67e9;
+  padding: 200px 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.page {
+  position: relative;
+  border-radius: 30px;
+  margin: 0 auto 20px;
+  max-width: 800px;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px;
+}
+
+.collapse {
+  border-bottom: 1px solid #e7e7e9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.collapse-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.collapse-head h3 {
+  color: #4a4b5e;
+  font-size: 1.5em;
+}
+
+.collapse-head h3:hover {
+  color: #f47c57;
+}
+
+.collapse-head h3.active {
+  color: #1d1e35;
+}
+
+.collapse-head h3.active:hover {
+  color: #f47c57;
+}
+
+.collapse-content {
+  margin-bottom: 20px;
+}
+
+.collapse-content p {
+  color: #787887;
+  font-weight: 400;
+  line-height: 1.45em;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  .page {
+    padding-top: 100px;
+    min-width: 200px;
+  }
+  .page .ilustration-box {
+    display: none;
+  }
+  .ilustration {
+    position: absolute;
+    top: -10px;
+    width: 266px;
+    height: 196px;
+    background-image: url("../images/illustration-woman-online-mobile.svg"), url("../images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .collapse-content {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page {
+    max-width: 1100px;
+    height: 688px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .content {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding-top: 100px;
+  }
+  .ilustration {
+    z-index: 1;
+    position: absolute;
+    background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 155px 80px, -340px -220px;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    top: 0px;
+    left: -220px;
+  }
+  .ilustration-box {
+    position: absolute;
+    left: -92px;
+    bottom: 300px;
+    z-index: 2;
+  }
+  .collapse-content {
+    display: none;
+  }
+}
 /*# sourceMappingURL=index.css.map */
