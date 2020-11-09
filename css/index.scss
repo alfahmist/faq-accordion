@@ -43,6 +43,9 @@ h1 {
   cursor: pointer;
   margin-bottom: 10px;
 
+  .logo-drop {
+    transition: transform 0.3s ease-in-out;
+  }
   h3 {
     color: $text-secondary-dark;
     font-size: $font-h3;
@@ -52,6 +55,7 @@ h1 {
     }
     &.active {
       color: $text-primary-dark;
+      font-weight: $font-bold;
       &:hover {
         color: $text-primary-red;
       }
@@ -68,6 +72,9 @@ h1 {
   }
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
 @media (max-width: $mobile) {
   h1 {
     text-align: center;
@@ -96,6 +103,10 @@ h1 {
 
   .collapse-content {
     display: none;
+  }
+
+  .block {
+    display: block;
   }
 }
 
@@ -140,5 +151,8 @@ h1 {
 
   .collapse-content {
     display: none;
+  }
+  .block {
+    display: block;
   }
 }
