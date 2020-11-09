@@ -190,7 +190,8 @@ table {
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
-  background-color: #af67e9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
   padding: 200px 20px;
 }
 
