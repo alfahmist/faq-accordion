@@ -4,7 +4,7 @@
     "sources": [
         "index.scss",
         "_reset.scss",
-        "_color.scss"
+        "_properties.scss"
     ],
     "names": [],
     "file": "index.css"
